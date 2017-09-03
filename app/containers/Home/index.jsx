@@ -1,7 +1,10 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
-import HomeHeader from '../../components/HomeHeader';
 import {connect} from 'react-redux';
+
+import Ad from './subpage/Ad';
+import HomeHeader from '../../components/HomeHeader';
+import Categore from '../../components/Category'
 
 class Home extends React.Component {
     constructor(props, context) {
@@ -13,6 +16,10 @@ class Home extends React.Component {
         return (
             <div>
                 <HomeHeader cityName={this.props.currentCity}/>
+                <Categore/>
+                <div style={{height: '15px'}}>
+                    <Ad/>
+                </div>
             </div>
         )
     }
@@ -20,7 +27,7 @@ class Home extends React.Component {
 
 function mapState(state) {
     return {
-        currentCity:state.userinfo.cityName
+        currentCity: state.userinfo.cityName
     }
 }
 
