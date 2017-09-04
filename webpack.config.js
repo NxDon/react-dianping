@@ -11,7 +11,8 @@ module.exports = {
     entry: path.resolve(__dirname, 'app/index.jsx'),
     output: {
         path: __dirname + "/build",
-        filename: "bundle.js"
+        filename: "bundle.js",
+        publicPath: '/'
     },
 
     resolve:{
