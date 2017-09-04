@@ -10,7 +10,7 @@ class List extends React.Component {
     render() {
         const datas = this.props.data
         return (
-            <div>{
+            <div className="list-container">{
                 datas.map((obj, index) => {
                     return <Item key={index} data={obj}></Item>
                 })
