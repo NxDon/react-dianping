@@ -3,7 +3,6 @@ import PureRenderMixin from 'react-addons-pure-render-mixin'
 import ReactSwipe from 'react-swipe';
 
 import './index.less';
-import imgUrl from '../../static/img/1.png';
 
 
 class Category extends React.Component {
@@ -32,7 +31,7 @@ class Category extends React.Component {
                 <ReactSwipe swipeOptions={opt}>
                     <div className="carousel-item">
                         <ul className="clear-fix">
-                            <li className="float-left" style={{backgroundImage:"url('../static/image/1.png')"}}>景点</li>
+                            <li className="float-left jingdian">景点</li>
                             <li className="float-left ktv">KTV</li>
                             <li className="float-left gouwu">购物</li>
                             <li className="float-left shenghuofuwu">生活服务</li>

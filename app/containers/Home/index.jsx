@@ -17,9 +17,8 @@ class Home extends React.Component {
             <div>
                 <HomeHeader cityName={this.props.currentCity}/>
                 <Categore/>
-                <div style={{height: '15px'}}>
-                    <Ad/>
-                </div>
+                <div style={{height: '15px'}}></div>
+                <Ad/>
             </div>
         )
     }
