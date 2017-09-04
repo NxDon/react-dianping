@@ -11,16 +11,17 @@ class HomeAd extends React.Component {
 
     render() {
         return (
-            <div>
-                {
-                    this.props.promotions.map((obj, index) => {
+            <div id="home-ad">
+                <h2>超值特惠</h2>
+                <div className="ad-container clear-fix">
+                    {this.props.promotions.map((item, index) => {
                         return <div key={index} className="ad-item float-left">
-                            <a href="" target="_blank">
-                                <img src={obj.img} alt={obj.title}/>
+                            <a href={item.link} target="_blank">
+                                <img src={item.img} alt={item.title}/>
                             </a>
                         </div>
-                    })
-                }
+                    })}
+                </div>
             </div>
         )
     }

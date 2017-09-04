@@ -20,7 +20,6 @@ class App extends React.Component {
         if (cityName == null) {
             cityName = '北京'
         }
-        console.log("current city is " + cityName);
         //获取到城市之后触发updatecityname动作
         this.props.userInfoActions.update({
                 cityName: cityName

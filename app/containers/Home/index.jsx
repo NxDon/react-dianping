@@ -5,6 +5,7 @@ import {connect} from 'react-redux';
 import Ad from './subpage/Ad';
 import HomeHeader from '../../components/HomeHeader';
 import Categore from '../../components/Category'
+import List from './subpage/List';
 
 class Home extends React.Component {
     constructor(props, context) {
@@ -15,10 +16,11 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <HomeHeader cityName={this.props.currentCity}/>
+                <HomeHeader cityName={this.props.userinfo.cityName}/>
                 <Categore/>
                 <div style={{height: '15px'}}></div>
                 <Ad/>
+                <List cityName={this.props.userinfo.cityName}/>
             </div>
         )
     }
@@ -26,7 +28,7 @@ class Home extends React.Component {
 
 function mapState(state) {
     return {
-        currentCity: state.userinfo.cityName
+        userinfo: state.userinfo
     }
 }
 
