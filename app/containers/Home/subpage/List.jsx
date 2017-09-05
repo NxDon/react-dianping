@@ -68,7 +68,7 @@ class List extends React.Component {
                         : <div>loading</div>
                 }
                 {
-                    this.state.hasMore ?
+                     this.state.hasMore ?
                         <LoadMore isLoadingMore={this.state.isLoadingMore} loadMoreFunction={this.loadMoreData.bind(this)}/> : null
                 }
             </div>
