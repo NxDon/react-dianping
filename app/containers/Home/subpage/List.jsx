@@ -46,14 +46,14 @@ class List extends React.Component {
     //数据处理函数
     resultHandler(result) {
         result.then((res) => {
-            console.log("get res");
+
             return res.json()
         }).then((json) => {
             this.setState({
                 hasMore: json.hasMore,
                 data: this.state.data.concat(json.data)
             });
-            console.log(this.state.data);
+
             }
         )
     }
