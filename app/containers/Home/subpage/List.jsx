@@ -49,10 +49,10 @@ class List extends React.Component {
             console.log("get res");
             return res.json()
         }).then((json) => {
-                this.setState({
-                    hasMore: json.hasMore,
-                    data: this.state.data.concat(json.data)
-                })
+            this.setState({
+                hasMore: json.hasMore,
+                data: this.state.data.concat(json.data)
+            });
             console.log(this.state.data);
             }
         )

@@ -12,7 +12,8 @@ module.exports = {
     output: {
         path: __dirname + "/build",
         filename: "bundle.js",
-        publicPath: '/'
+        publicPath: '/',
+
     },
 
     resolve:{
@@ -75,5 +76,6 @@ module.exports = {
         historyApiFallback: true, //不跳转
         inline: true, //实时刷新
         hot: true  // 使用热加载插件 HotModuleReplacementPlugin
-    }
+    },
+    devtool: '#eval-source-map'
 }

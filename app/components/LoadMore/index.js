@@ -36,7 +36,7 @@ class LoadMore extends React.Component {
         function callback() {
             const top = wrapper.getBoundingClientRect().top
             const windowHeight = window.screen.height
-            if (top && top < windowHeight) {//此时加载更多的按钮被滚动在页面范围内
+            if (top && top+40 < windowHeight) {//此时加载更多的按钮被滚动在页面范围内
                 setTimeout(()=>{loadMoreFn()},500)
             }
         }
