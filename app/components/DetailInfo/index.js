@@ -24,7 +24,6 @@ class DetailInfo extends React.Component {
                     <div className="info-content">
                         <h1>{data.title}</h1>
                         <div className="star-container">
-                            {/* 引用 Star 组件 */}
                             <Star star={data.star}/>
                             <span className="price">￥{data.price}</span>
                         </div>
